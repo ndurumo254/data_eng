@@ -48,13 +48,9 @@ Start your Kafka container, then access it:
 
 ```bash
 docker exec -it kafka-broker bash
- List of brokers
 
-Consume Messages from a Topic
 
 kafka-topics --bootstrap-server localhost:9092 --list
 
-
-Consume Messages from a Topic
 
 kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
