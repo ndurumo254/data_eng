@@ -53,11 +53,6 @@ docker exec -it kafka-broker bash
 Consume Messages from a Topic
 
 kafka-topics --bootstrap-server localhost:9092 --list
-[appuser@b0d3b9da8cb8 ~]$ kafka-topics --bootstrap-server localhost:9092 --list
-emergency_alerts
-gps_data
-vehicle_data
-weather_data
 
 
 Consume Messages from a Topic
