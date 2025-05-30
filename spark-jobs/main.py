@@ -28,7 +28,7 @@ def simulate_vehicle_movement():
         'longitude': round(start_location['longitude'], 6)
     }
 
-def generate_vehicle_data(device_id):
+def generate_vehicle_data(device_id,vehicle_type ='private'):
     location = simulate_vehicle_movement()
     timestamp = get_next_time().isoformat()
     
@@ -47,10 +47,16 @@ def generate_vehicle_data(device_id):
             'fuelType': 'Hybrid'
         },
         'gps': {
+            'id': str(uuid.uuid4()),
             'deviceId': device_id,
             'timestamp': timestamp,
             'latitude': location['latitude'],
-            'longitude': location['longitude']
+            'longitude': location['longitude'], 
+            'speed': random.uniform(a=0, b=40),  # km/h
+            'direction': 'North-East',
+            'vehicleType': vehicle_type ,   
+            'speed': round(random.uniform(10, 40), 2),  # km/h
+            'direction': 'North-East',
         }
     }
 
