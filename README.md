@@ -15,6 +15,7 @@ This project is developed and tested on:
 
 ---
 - ## Data pipeline structure
+
 ![alt text](data_pipeline.png)
 
 ## 🔧 Technologies Used
@@ -26,6 +27,7 @@ This project is developed and tested on:
 - **Python** – For simulating vehicle data producers  
 
 ---
+
 
 ## 🛠️ Prerequisites
 
@@ -46,12 +48,18 @@ Start your Kafka container, then access it:
 
 ```bash
 docker exec -it kafka-broker bash
-# List of brokers
+ List of brokers
 
-```bash
+Consume Messages from a Topic
+
 kafka-topics --bootstrap-server localhost:9092 --list
+[appuser@b0d3b9da8cb8 ~]$ kafka-topics --bootstrap-server localhost:9092 --list
+emergency_alerts
+gps_data
+vehicle_data
+weather_data
 
-```bash
-# Consume Messages from a Topic
+
+Consume Messages from a Topic
 
 kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
