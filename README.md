@@ -14,6 +14,8 @@ This project is developed and tested on:
 > ✅ All commands and installation steps in this guide are tailored for Ubuntu 24.04 users.
 
 ---
+##Data pipeline structure
+![alt text](<ChatGPT Image May 24, 2025, 01_38_06 PM.png>)
 
 ## 🔧 Technologies Used
 
@@ -44,3 +46,5 @@ Start your Kafka container, then access it:
 
 ```bash
 docker exec -it kafka-broker bash
+```bash
+kafka-topics --bootstrap-server localhost:9092 --list
