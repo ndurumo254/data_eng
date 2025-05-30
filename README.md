@@ -15,7 +15,7 @@ This project is developed and tested on:
 
 ---
 - ## Data pipeline structure
-![alt text](<ChatGPT Image May 24, 2025, 01_38_06 PM.png>)
+![alt text](data_pipeline.png)
 
 ## 🔧 Technologies Used
 
