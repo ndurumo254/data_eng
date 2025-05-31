@@ -98,6 +98,11 @@ Once the data is produced, it's sent to a **Kafka broker** (the Kafka server). T
 - And further splits each topic into **partitions**
 
 > 📌 Partitions allow Kafka to scale and process messages in parallel while preserving the order of messages **within** a partition.
+### 3. Topic
+```bash
+kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
+```
+![alt text](<Screenshot from 2025-05-31 09-45-22.png>)
 
 ### 3. Consumers Read the Data
 
