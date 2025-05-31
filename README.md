@@ -57,6 +57,6 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --
 
 
 
----
-- ## List of my kafika_brokers
+## 🐳 List of my kafika_brokers
+in my kafika server(broker) the following brokers were created
 ![alt text](<Screenshot from 2025-05-31 09-25-48.png>)
