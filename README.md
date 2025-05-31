@@ -54,3 +54,9 @@ kafka-topics --bootstrap-server localhost:9092 --list
 
 
 kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
+
+
+
+---
+- ## List of my kafika_brokers
+![alt text](<Screenshot from 2025-05-31 09-25-48.png>)
