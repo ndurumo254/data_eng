@@ -89,11 +89,11 @@ These data streams are **produced** by devices
 
 ### 2. Kafka Broker Receives and Stores Data
 
-Once the data is produced, it's sent to a **Kafka broker** (the Kafka server). The broker organizes this data:
 Below is a snapshot of the active Kafka brokers configured in the project:
 
 ![Kafka Brokers](Screenshot%20from%202025-05-31%2009-25-48.png)
 
+Once the data is produced, it's sent to a **Kafka broker** (the Kafka server). The broker organizes this data:
 - By **topic** (like `gps_data`, `vehicle_data`, etc.)
 - And further splits each topic into **partitions**
 
