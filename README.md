@@ -104,8 +104,27 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --
 ```
 ![alt text](<Screenshot from 2025-05-31 09-45-22.png>)
 
-### 3. Consumers Read the Data
+### 5. Consumers Read the Data
 
+
+### 5. 🔍 Consumers Read the Data
+
+To view how Kafka has partitioned the `vehicle_data` topic, follow these steps using Docker:
+
+```bash
+# 1. List running Docker containers
+docker ps
+
+# 2. Access the Kafka container (replace <container_id> with the actual container ID)
+#docker exec -it <container_id> bash
+docker exec -it 87a2edfdfb58 bash#id of the container
+
+# 3. Describe the Kafka topic to see partition and replication details
+#kafka-topics --bootstrap-server localhost:9092 --describe --topic vehicle_data
+kafka-topics --bootstrap-server localhost:9092 --describe --topic vehicle_data
+```
+![alt text](<Screenshot from 2025-05-31 12-29-43.png>)
+### 5. Consumers Read the Data
 Kafka **consumers** then subscribe to these topics to read the data and perform various actions, such as:
 
 - Logging to a database
