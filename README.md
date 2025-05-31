@@ -80,16 +80,19 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --
 
 We have multiple Kafka topics representing different data sources from vehicles:
 
-- `vehicle_data` – General vehicle information (e.g., speed, fuel level)
+- `vehicle_data` – General vehicle information 
 - `gps_data` – Location coordinates from the vehicle
 - `emergency_alerts` – Emergency signals like crash alerts or breakdowns
 - `weather_data` – Weather conditions affecting the vehicle
 
-These data streams are **produced** by devices or apps (producers) and sent to Kafka.
+These data streams are **produced** by devices 
 
 ### 2. Kafka Broker Receives and Stores Data
 
 Once the data is produced, it's sent to a **Kafka broker** (the Kafka server). The broker organizes this data:
+Below is a snapshot of the active Kafka brokers configured in the project:
+
+![Kafka Brokers](Screenshot%20from%202025-05-31%2009-25-48.png)
 
 - By **topic** (like `gps_data`, `vehicle_data`, etc.)
 - And further splits each topic into **partitions**
@@ -113,9 +116,6 @@ Kafka **consumers** then subscribe to these topics to read the data and perform 
 3. A consumer service reads the message and updates the vehicle's position on a map.
 
 ---
-Below is a snapshot of the active Kafka brokers configured in the project:
-
-![Kafka Brokers](Screenshot%20from%202025-05-31%2009-25-48.png)
 
 ---
 ## 🚀 Data streams in my vehicle_data topic will be like
