@@ -122,18 +122,6 @@ Kafka **consumers** then subscribe to these topics to read the data and perform 
 
 ---
 
----
-## 🚀 Data streams in my vehicle_data topic will be like
-```bash
-kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
-```
-![alt text](<Screenshot from 2025-05-31 09-45-22.png>)
-## 🚀 Next Steps
-
-
-
----
-
 
 ---
 
