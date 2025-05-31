@@ -81,7 +81,7 @@ Below is a snapshot of the active Kafka brokers configured in the project:
 
 ---
 ## 🚀 Data streams in my vehicle_data topic will be like
-
+![alt text](<Screenshot from 2025-05-31 09-45-22.png>)
 ## 🚀 Next Steps
 
 * Implement a Spark Structured Streaming job to consume from `vehicle_data` topic.
