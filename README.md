@@ -74,7 +74,45 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --
 ---
 
 ## 🗂️ Kafka Brokers Overview
+## 🔧 How Kafka Works in This Project
 
+### 1. Producers Send Data
+
+We have multiple Kafka topics representing different data sources from vehicles:
+
+- `vehicle_data` – General vehicle information (e.g., speed, fuel level)
+- `gps_data` – Location coordinates from the vehicle
+- `emergency_alerts` – Emergency signals like crash alerts or breakdowns
+- `weather_data` – Weather conditions affecting the vehicle
+
+These data streams are **produced** by devices or apps (producers) and sent to Kafka.
+
+### 2. Kafka Broker Receives and Stores Data
+
+Once the data is produced, it's sent to a **Kafka broker** (the Kafka server). The broker organizes this data:
+
+- By **topic** (like `gps_data`, `vehicle_data`, etc.)
+- And further splits each topic into **partitions**
+
+> 📌 Partitions allow Kafka to scale and process messages in parallel while preserving the order of messages **within** a partition.
+
+### 3. Consumers Read the Data
+
+Kafka **consumers** then subscribe to these topics to read the data and perform various actions, such as:
+
+- Logging to a database
+- Triggering emergency responses
+- Displaying real-time information on dashboards
+
+---
+
+## 🔄 Example Flow
+
+1. A GPS device sends coordinates → `gps_data` topic.
+2. Kafka stores the data in one of the topic’s partitions.
+3. A consumer service reads the message and updates the vehicle's position on a map.
+
+---
 Below is a snapshot of the active Kafka brokers configured in the project:
 
 ![Kafka Brokers](Screenshot%20from%202025-05-31%2009-25-48.png)
