@@ -100,7 +100,7 @@ kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --
 
 ---
 
-## 📁 Repository Structure (optional suggestion)
+## 📁 Repository Structure 
 
 ```bash
 🔽 docker/
