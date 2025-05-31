@@ -80,6 +80,7 @@ Below is a snapshot of the active Kafka brokers configured in the project:
 ![Kafka Brokers](Screenshot%20from%202025-05-31%2009-25-48.png)
 
 ---
+## 🚀 Data streams in my vehicle_data topic will be like
 
 ## 🚀 Next Steps
 
@@ -87,6 +88,15 @@ Below is a snapshot of the active Kafka brokers configured in the project:
 * Set up AWS S3 bucket and configure the Spark job to write data to S3.
 * Use AWS Glue to catalog data, then query it using AWS Redshift or Athena.
 * Build visual dashboards with AWS QuickSight.
+
+---
+
+
+---
+
+## 🚀 Next Steps
+
+
 
 ---
 
