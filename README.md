@@ -81,13 +81,12 @@ Below is a snapshot of the active Kafka brokers configured in the project:
 
 ---
 ## 🚀 Data streams in my vehicle_data topic will be like
+kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_data --from-beginning
+
 ![alt text](<Screenshot from 2025-05-31 09-45-22.png>)
 ## 🚀 Next Steps
 
-* Implement a Spark Structured Streaming job to consume from `vehicle_data` topic.
-* Set up AWS S3 bucket and configure the Spark job to write data to S3.
-* Use AWS Glue to catalog data, then query it using AWS Redshift or Athena.
-* Build visual dashboards with AWS QuickSight.
+
 
 ---
 
