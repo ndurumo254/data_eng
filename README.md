@@ -167,6 +167,8 @@ Kafka **consumers** then subscribe to these topics to read the data and perform 
 
 ---
 
+# 📁 AWS INTEGRATION
+
 ## 🙌 Contributions & License
 
 This project is open for contributions. Feel free to fork and improve.
