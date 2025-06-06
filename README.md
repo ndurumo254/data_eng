@@ -168,6 +168,8 @@ Kafka **consumers** then subscribe to these topics to read the data and perform 
 ---
 
 # 📁 AWS INTEGRATION
+S3 policy
+![alt text](<Screenshot from 2025-06-06 17-00-24.png>)
 
 ## 🙌 Contributions & License
 
